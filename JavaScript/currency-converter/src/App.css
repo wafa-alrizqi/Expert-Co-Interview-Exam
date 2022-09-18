@@ -1,4 +1,24 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
 
+.outer-div{
+  display: flex;
+  flex-direction: row;
+}
+.inner-div1 {
+  width: 90px;
+  flex: 0 0 50px;
+  margin: 5px;
+  padding-right: 50px;
+
+}
+.inner-div2 {
+  width: 90px;
+  flex: 0 0 50px;
+  margin: 5px;
+  margin-left: 25px;
+}
