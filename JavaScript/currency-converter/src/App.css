@@ -1,3 +1,4 @@
+
 body{
   margin: 0;
   display: flex;
@@ -8,6 +9,8 @@ body{
 .outer-div{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  
 }
 .inner-div1 {
   width: 90px;
@@ -16,9 +19,31 @@ body{
   padding-right: 50px;
 
 }
+.inner-div1 input{
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-right-style: none;
+  height: 21px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
 .inner-div2 {
+  
   width: 90px;
   flex: 0 0 50px;
   margin: 5px;
-  margin-left: 25px;
+  margin-left: 50px;
+}
+.inner-div2 select {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 30px !important;
+  padding: 3px;
+  border-radius: 5px;
 }
