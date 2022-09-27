@@ -1,25 +1,35 @@
 from datetime import date
-import datetime
-# Task 2: 
+
+# Task 2:
 # Using two dates as input, calculate the interval of time between them.
 
-def date_function(d1:date, d2:date) -> date:
+
+def date_function(d1: date, d2: date) -> date:
     """
-    a function to detemine the interval of time between two dates 
+    A function to detemine the interval of time between two dates. 
+    This function takes two dates as an arguments and returns the
+    date difference between them.
     """
-    year= abs(d1.year - d2.year)
-    month=abs(d1.month - d2.month)
+    # abs() function to keep the number positive
+    year = abs(d1.year - d2.year)
+    month = abs(d1.month - d2.month)
     day = abs(d1.day - d2.day)
-    real_dates='The amount of time between %s and %s '%(d1, d2)
-    date_difference = real_dates + 'is:\n%d Years, %d Months, %d Days'%(year,month,day)
+
+    # %s and %d are used for formatting strings.
+    # %s is a placeholder for a string and %d is a placeholder for a number.
+    real_dates = 'The amount of time between %s and %s ' % (d1, d2)
+    date_difference = real_dates + \
+        'is:\n%d Years, %d Months, %d Days' % (year, month, day)
     return date_difference
+
 
 date1 = date(1995, 4, 22)
 date2 = date(1999, 8, 14)
-print(date_function(date1,date2))
-# print(date_function.__doc__)
+print(date_function(date1, date2))
 
-    # Using User Input 
+
+# Using User Input
+
 # print('first date information: ')
 # d1_year=int(input("enter the year: "))
 # d1_month=int(input("enter the month: "))
