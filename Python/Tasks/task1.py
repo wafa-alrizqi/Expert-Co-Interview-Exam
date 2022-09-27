@@ -1,23 +1,20 @@
-# Task 1
-""" 
-Task 1: 
-Sort a list of names alphabetically
-without using  the built-in function sort().
-"""
-# first solution 
-# names =  ["d","b","a","c","f","h","g","e"]
-# for i in sorted(names):
-#     print(i,' ', end='')
+# Task 1:
+    # Sort a list of names alphabetically without using the built-in function sort().
 
-# second solution 
 def sorted_function(names) -> list:
+    '''
+    I'm using the bubble sort algorithm to sort the names, So this function
+    takes a list as an argument and returns a sorted list.
+    '''
+    # access each array element
     for i in range(len(names)):
+        # compare the elements
         for j in range(len(names) - 1):
             if names[j] > names[j+1]:
                 names[j+1],names[j]= names[j], names[j+1]
     return names
 
-my_list = []
+names_list = []
 print('Enter 0 to Exit')
 while True:
     user_input = input('enter the name: ' )
@@ -26,7 +23,7 @@ while True:
     else:
         if user_input == '0':
             print('Exit the Program')
-            print('Sorted Names:',sorted_function(my_list))
+            print('Sorted Names:',sorted_function(names_list))
             break
         else:
-            my_list.append(user_input)
+            names_list.append(user_input)
