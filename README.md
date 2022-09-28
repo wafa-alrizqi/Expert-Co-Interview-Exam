@@ -30,10 +30,13 @@ We are using fixer API to fetch a list of all available currencies as well as co
 The states are passed in as props in our UI component . 
 
 ## Odoo Task: <br />
+
 - **Task 5 Description:** create a new module palette_tracking for the provided requirement, Please adhere to the PEP8 style guide,Also provide the Arabic translation.<br />
 <br />When I initially read about the Odoo task, I took my time to grasp what Odoo is and how it works, what the Architecture it follows, the module structure and so on, Since everything about Odoo was new to me.<br />
 Therefore, I decided that before getting started, I should read the documentation and study it until I have a clear mental vision of how to develop my own Odoo module.<br />
-Odoo is one of the promising software that I will definitely continue to learn, ***But Unfortunately I was unable to finish this task by the deadline because it took me longer to learn more than I planned.***<br />
+Odoo is one of the promising software that I will definitely continue to learn,
+#### ***But Unfortunately I was unable to complete this task by the deadline because it took me longer to learn more than I planned.***<br />
+
 ### <br />Finally, I cannot express how much I value the knowledge this interview exam has given me.<br />
 ### Best regards,<br />
 ### Wafa Ali Alrizqi 
