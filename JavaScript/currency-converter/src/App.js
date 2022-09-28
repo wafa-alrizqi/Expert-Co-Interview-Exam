@@ -4,18 +4,14 @@ import FromCurrency from "./components/FromCurrency";
 import ToCurrency from "./components/ToCurrency";
 import React, { useState, useEffect } from "react";
 
-// const BASE_URL = "https://api.exchangeratesapi.io/v1/";
-
 function App() {
   const [currencyList, setCurrencyList] = useState([]);
-  // console.log(currencyList);
 
   const [fromCurrency, setFromCurrency] = useState();
   const [toCurrency, setToCurrency] = useState();
   const [amount, setAmount] = useState(1);
   const [amountInFromCurr, setAmountInFromCurr] = useState(true);
   const [exchangeRate, setExchangeRate] = useState();
-  // console.log(exchangeRate);
 
   let toAmount, fromAmount;
   if (amountInFromCurr) {
@@ -28,8 +24,7 @@ function App() {
 
   useEffect(() => {
     var myHeaders = new Headers();
-    // myHeaders.append("apikey", "U3MM7R97AmLwBtYZ9PuY6UceBAp3KMCO");
-    myHeaders.append("apikey", "oE9288rTnXKQs1PC61DJEWR2xmx5VRXM");
+    myHeaders.append("apikey", "U3MM7R97AmLwBtYZ9PuY6UceBAp3KMCO");
     var requestOptions = {
       method: "GET",
       redirect: "follow",
@@ -38,7 +33,6 @@ function App() {
     fetch("https://api.apilayer.com/fixer/latest", requestOptions)
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data);
         const defultCurrency = Object.keys(data.rates)[0];
         setCurrencyList([data.base, ...Object.keys(data.rates)]);
         setFromCurrency(data.base);
@@ -49,8 +43,7 @@ function App() {
 
   useEffect(() => {
     var myHeaders = new Headers();
-    // myHeaders.append("apikey", "U3MM7R97AmLwBtYZ9PuY6UceBAp3KMCO");
-    myHeaders.append("apikey", "oE9288rTnXKQs1PC61DJEWR2xmx5VRXM");
+    myHeaders.append("apikey", "U3MM7R97AmLwBtYZ9PuY6UceBAp3KMCO");
     var requestOptions = {
       method: "GET",
       redirect: "follow",
