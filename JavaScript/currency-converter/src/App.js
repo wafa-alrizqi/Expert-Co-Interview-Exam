@@ -78,7 +78,13 @@ function App() {
   return (
     <>
       <h1 style={{ textAlign: "center" }}> Currency Converter</h1>
-      <div style={{ border: "3px solid black", marginTop: "100px" , paddingTop:'20px'}}>
+      <div
+        style={{
+          border: "3px solid black",
+          marginTop: "100px",
+          paddingTop: "20px",
+        }}
+      >
         <CurrencyCard
           currencyList={currencyList}
           selectCurrency={fromCurrency}
